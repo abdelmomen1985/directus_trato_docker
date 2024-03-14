@@ -1,0 +1,25 @@
+version: '3'
+services:
+  directus:
+    container_name: directus
+    image: directus/directus:10.10.3
+    ports:
+      - 48056:8055
+    volumes:
+      - ./database:/directus/database
+      - ./uploads:/directus/uploads
+      - ./extensions:/directus/extensions
+    networks:
+      - directus
+    environment:
+      KEY: 'FDNvN89q0UP'
+      SECRET: '6116487be263'
+      DB_CLIENT: "sqlite3"
+      DB_FILENAME: "/directus/database/data.db"
+      ADMIN_EMAIL: 'abdelmomen1985@gmail.com'
+      ADMIN_PASSWORD: '123456d6'
+      WEBSOCKETS_ENABLED: "true"
+
+networks:
+  directus:
+
