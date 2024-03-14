@@ -9,6 +9,8 @@ services:
       - ./database:/directus/database
       - ./uploads:/directus/uploads
       - ./extensions:/directus/extensions
+    networks:
+      - directus
     environment:
       KEY: "FDNvN89q0UP"
       SECRET: "6116487be263"
@@ -17,3 +19,6 @@ services:
       ADMIN_EMAIL: "abdelmomen1985@gmail.com"
       ADMIN_PASSWORD: "123456d6"
       WEBSOCKETS_ENABLED: "true"
+
+networks:
+  directus:
