@@ -19,6 +19,12 @@ services:
       ADMIN_EMAIL: "abdelmomen1985@gmail.com"
       ADMIN_PASSWORD: "123456d6"
       WEBSOCKETS_ENABLED: "true"
+      STORAGE_LOCATIONS: "cloudinary"
+      STORAGE_CLOUDINARY_DRIVER: "cloudinary"
+      STORAGE_CLOUDINARY_CLOUD_NAME: "dlg4nl1rx"
+      STORAGE_CLOUDINARY_API_KEY: "248165738342725"
+      STORAGE_CLOUDINARY_API_SECRET: "YsZhDdEGyymtoCPdaZLBjqjTtyA"
+      STORAGE_CLOUDINARY_ACCESS_MODE: "public"
 
 networks:
   directus:
