@@ -1,1 +1,3 @@
 # Trato Directus backend
+
+.
